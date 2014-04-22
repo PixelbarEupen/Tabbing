@@ -1,4 +1,6 @@
 ### Changelog for Cycle-Slideshow Plugin
+#### 0.1.1a (21/04/2014)
+* Minor release to test update ability
 
 #### 0.1 (21/04/2014)
 
