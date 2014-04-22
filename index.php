@@ -4,9 +4,9 @@
 	Plugin Name: ACF Tabbing
 	Author: Adrian Lambertz
 	Description: Wordpress Tabbing Plugin. This Plugin needs ACF (Repeater Field) and the Foundation Framework to do its magic. So be sure to install them first!
-	Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
+	Plugin URI: https://github.com/PixelbarEupen/Tabbing
 	Version: 0.1
-	GitHub Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
+	GitHub Plugin URI: https://github.com/PixelbarEupen/Tabbing
 	GitHub Access Token: 6ca583973da0e33ee1a6c90c3e4920e6143369ca
 	*/
 	
