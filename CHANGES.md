@@ -1,4 +1,8 @@
 ### Changelog for Cycle-Slideshow Plugin
+
+#### 0.1.12 (07/05/2014)
+* add medium classes for foundation
+
 #### 0.1.1a (21/04/2014)
 * Minor release to test update ability
 
