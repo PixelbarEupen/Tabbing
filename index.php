@@ -5,7 +5,7 @@
 	Author: Adrian Lambertz
 	Description: Wordpress Tabbing Plugin. This Plugin needs ACF (Repeater Field) and the Foundation Framework to do its magic. So be sure to install them first!
 	Plugin URI: https://github.com/PixelbarEupen/Tabbing
-	Version: 0.1
+	Version: 0.1.12
 	GitHub Plugin URI: https://github.com/PixelbarEupen/Tabbing
 	GitHub Access Token: 6ca583973da0e33ee1a6c90c3e4920e6143369ca
 	*/
@@ -45,11 +45,11 @@
 								else:
 									$class = 'left';
 								endif;
-								$content .= '<div class="images large-4 column '.$class.'">';
+								$content .= '<div class="images large-4 medium-4 column '.$class.'">';
 									$content .= wp_get_attachment_image(get_sub_field('first_img'),'large');
 									$content .= wp_get_attachment_image(get_sub_field('second_img'),'large');
 								$content .= '</div>';
-								$content .= '<div class="large-8 column">'.get_sub_field('inhalt').'</div>';
+								$content .= '<div class="large-8 medium-8 column">'.get_sub_field('inhalt').'</div>';
 							$content .= '</div>';
 							$content_i++;
 						endwhile;
