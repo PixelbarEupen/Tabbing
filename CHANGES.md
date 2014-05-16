@@ -1,5 +1,9 @@
 ### Changelog for Cycle-Slideshow Plugin
 
+#### 0.1.15 (16/05/2014)
+
+* added filters to change the image size within the functions.php
+
 #### 0.1.14 (16/05/2014)
 * added possibility to choose 50:50 layout
 
