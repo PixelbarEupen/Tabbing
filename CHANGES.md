@@ -1,6 +1,6 @@
 ### Changelog for Cycle-Slideshow Plugin
 
-#### 0.1.13 (16/05/2014)
+#### 0.1.14 (16/05/2014)
 * added possibility to choose 50:50 layout
 
 #### 0.1.12 (07/05/2014)

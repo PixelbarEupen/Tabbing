@@ -104,8 +104,8 @@
 										'type' => 'radio',
 										'column_width' => '',
 										'choices' => array (
-											'left' => 'Ja',
-											'right' => 'Nein',
+											'ja' => 'Ja',
+											'nein' => 'Nein',
 										),
 										'other_choice' => 0,
 										'save_other_choice' => 0,

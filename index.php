@@ -5,7 +5,7 @@
 	Author: Adrian Lambertz
 	Description: Wordpress Tabbing Plugin. This Plugin needs ACF (Repeater Field) and the Foundation Framework to do its magic. So be sure to install them first!
 	Plugin URI: https://github.com/PixelbarEupen/Tabbing
-	Version: 0.1.13
+	Version: 0.1.14
 	GitHub Plugin URI: https://github.com/PixelbarEupen/Tabbing
 	GitHub Access Token: 6ca583973da0e33ee1a6c90c3e4920e6143369ca
 	*/
@@ -48,10 +48,10 @@
 								
 								if(get_sub_field('50_50') == 'ja'):
 									$width = 'large-6 medium-6';
-								elseif(get_sub_field('img_ausrichtung') == 'right'):
-									$firstwidth = 'large-4 medium-4';
-									$width = '';
+									$firstwidth = '';
+									$secondwidth = '';
 								else:
+									$firstwidth = 'large-4 medium-4';
 									$secondwidth = 'large-8 medium-8';
 									$width = '';
 								endif;
