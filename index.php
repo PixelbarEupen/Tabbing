@@ -59,13 +59,29 @@
 								$fimg = wp_get_attachment_image_src(get_sub_field('first_img'),'large');
 								$simg = wp_get_attachment_image_src(get_sub_field('second_img'),'large');
 								
+								
+								//get images 
+								$fsmall = wp_get_attachment_image_src(get_sub_field('first_img'),apply_filters( 'tabbing_small_size', $size ));
+								$fmedium = wp_get_attachment_image_src(get_sub_field('first_img'),apply_filters( 'tabbing_medium_size', $size ));
+								$flarge = wp_get_attachment_image_src(get_sub_field('first_img'),apply_filters( 'tabbing_large_size', $size ));
+								$fdefault = wp_get_attachment_image_src(get_sub_field('first_img'),apply_filters( 'tabbing_default_size', $size ));
+								
+								$ssmall = wp_get_attachment_image_src(get_sub_field('second_img'),apply_filters( 'tabbing_small_size', $size ));
+								$smedium = wp_get_attachment_image_src(get_sub_field('second_img'),apply_filters( 'tabbing_medium_size', $size ));
+								$slarge = wp_get_attachment_image_src(get_sub_field('second_img'),apply_filters( 'tabbing_large_size', $size ));
+								$sdefault = wp_get_attachment_image_src(get_sub_field('second_img'),apply_filters( 'tabbing_default_size', $size ));
+								
+								
+								
 								$content .= '<div class="images '.$width.' '.$firstwidth.' column '.$class.'">';
 									$content .= '<a href="'.$fimg[0].'" title="">';
 										$size = 'large';
-										$content .= wp_get_attachment_image(get_sub_field('first_img'),apply_filters( 'tabbing_img_size', $size ));
+										$content .= '<img data-interchange="['.$fsmall[0].', (small)], ['.$fsmall[0].', (small)], ['.$fsmall[0].', (small)], ['.$fdefault[0].', (large)]" />';
+										$content .= '<noscript><img src="'.$fdefault[0].'"></noscript>';
 									$content .= '</a>';
 									$content .= '<a href="'.$simg[0].'" title="">';
-										$content .= wp_get_attachment_image(get_sub_field('second_img'),apply_filters( 'tabbing_img_size', $size ));
+										$content .= '<img data-interchange="['.$ssmall[0].', (small)], ['.$ssmall[0].', (small)], ['.$ssmall[0].', (small)], ['.$sdefault[0].', (large)]" />';
+										$content .= '<noscript><img src="'.$sdefault[0].'"></noscript>';
 									$content .= '</a>';
 								$content .= '</div>';
 								$content .= '<div class="'.$width.' '.$secondwidth.' column">'.get_sub_field('inhalt').'</div>';
